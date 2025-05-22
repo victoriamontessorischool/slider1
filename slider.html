@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <style>
+      .parent{
+      	
+        box-shadow: 20px 20px 10px gray;
+        animation: slides 20s linear infinite;
+        height:60vh;
+        width:100%;
+        background-image:url("https://picsum.photos/id/132/200/300");
+        background-position:center;
+        background-repeat:no-repeat;
+        background-size:100% 100%;
+        
+        display:flex;
+        justify-content:center;
+        align-items:start;
+        
+        border-radius:10px;
+        
+      }
+      
+      .parent:hover{
+      	 padding:2px;
+       
+      }
+      
+      h1{
+      	text-align:center;
+        color:white;
+        font-family:algerian;
+      }
+      
+      @keyframes slides{
+        0%{
+        	background-image:url("https://picsum.photos/id/132/200/300");
+        }
+        
+        30%{
+        	background-image:url("https://picsum.photos/id/137/200/300");
+         
+        }
+        
+        60%{
+        	background-image:url("https://picsum.photos/id/217/200/300");
+        }
+        
+        100%{
+        	background-image:url("https://picsum.photos/id/247/200/300");
+        }
+        
+      }
+      
+      
+       .span{
+          	 animation: color 20s  infinite;
+          }
+      
+        @keyframes color{
+        0%{
+        		color:white;
+        }
+        
+        30%{
+        	color:white;
+         
+        }
+        
+        60%{
+        	color:red;
+        }
+        
+        100%{
+        color:white;
+        }
+        
+      }
+      
+      
+    </style>
+  </head>
+  
+<body>
+ 
+  <div class="parent">
+    <h1>I <span class="span">LOVE</span> NATURE</h1>
+  </div>
+ 
+  
+  
+</body>
+</html>
